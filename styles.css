@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f7ff;
+  color: #1e1b4b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 90% 0%, #ddd6fe 0, transparent 30rem),
+    #f7f7ff;
+}
+
+.page {
+  width: min(100%, 36rem);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+}
+
+.hero { margin-bottom: 2.25rem; }
+
+.eyebrow {
+  margin: 0 0 .6rem;
+  color: #6d28d9;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+h1, h2, p { margin-top: 0; }
+
+h1 {
+  margin-bottom: .55rem;
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.intro, .hint { color: #5b5b78; line-height: 1.55; }
+.intro { margin-bottom: 0; font-size: 1.05rem; }
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .8rem;
+}
+
+h2 { margin-bottom: 0; font-size: 1.05rem; }
+
+#app-count {
+  padding: .22rem .6rem;
+  border-radius: 999px;
+  background: #ede9fe;
+  color: #5b21b6;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.app-list { display: grid; gap: .72rem; }
+
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 5.1rem;
+  padding: .85rem 1rem;
+  border: 1px solid #e6e5f3;
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, .92);
+  color: inherit;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(43, 35, 92, .06);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.app-card:active { transform: scale(.98); }
+.app-card:focus-visible { outline: 3px solid #a78bfa; outline-offset: 3px; }
+
+.app-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: .95rem;
+  color: white;
+  font-size: 1.55rem;
+  box-shadow: inset 0 1px rgba(255,255,255,.24);
+}
+
+.app-info { min-width: 0; flex: 1; }
+.app-name { display: block; font-size: 1rem; font-weight: 750; }
+.app-description { display: block; margin-top: .2rem; color: #676580; font-size: .83rem; }
+.arrow { color: #817caa; font-size: 1.45rem; }
+.hint { margin: 1.5rem .35rem 0; font-size: .82rem; }
+
+@media (hover: hover) {
+  .app-card:hover { border-color: #c4b5fd; box-shadow: 0 8px 24px rgba(79, 70, 229, .12); transform: translateY(-2px); }
+}

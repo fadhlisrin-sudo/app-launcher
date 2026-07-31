@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4f46e5" />
+    <title>My Learning Apps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">APP LAUNCHER</p>
+        <h1>Ready to learn?</h1>
+        <p class="intro">Choose an app to open it on this device.</p>
+      </header>
+
+      <section aria-labelledby="apps-heading">
+        <div class="section-heading">
+          <h2 id="apps-heading">Your apps</h2>
+          <span id="app-count" aria-label="Number of apps"></span>
+        </div>
+        <div id="app-list" class="app-list" aria-live="polite"></div>
+      </section>
+
+      <p class="hint">Tap an app to launch it. If it is not installed, its Play Store page will open.</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
